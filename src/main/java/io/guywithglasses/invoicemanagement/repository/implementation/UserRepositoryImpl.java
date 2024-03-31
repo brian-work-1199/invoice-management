@@ -31,7 +31,7 @@ import static java.util.Objects.requireNonNull;
 public class UserRepositoryImpl implements UserRepository<User> {
     private final NamedParameterJdbcTemplate jdbc;
     private final RoleRepository<Role> roleRepository;
-    private BCryptPasswordEncoder encoder;
+    private final BCryptPasswordEncoder encoder;
 
     @Override
     public User create(User user) {
