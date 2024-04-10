@@ -18,5 +18,5 @@ public class InvoicemanagementApplication {
 	@Bean
 	public BCryptPasswordEncoder passwordEncoder(){
 		return new BCryptPasswordEncoder(STRENGHT);
-	}
+	} 
 }
